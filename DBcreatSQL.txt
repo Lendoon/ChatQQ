@@ -1,0 +1,9 @@
+create table users(UserID int,Name CHAR(20),Password CHAR(20),Gender int,Telephonenum int,Birthday int,Sign char(20));
+create table Friendlist(UserID int,FriendID int,DepartmentID int);
+create table FriendHistory(FHistoryID int,SenderID int,ReceiveID int,ChatDate int,Record char(200));
+
+#system/manager
+#qq/123456
+
+create user qq identified by 123456;  
+grant connect,resource to qq;
